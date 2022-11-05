@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1, h2, h3, h4, p {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  padding: 20px 10px;
+  font-family: inherit;
+  color: #1C073E;
+  cursor: pointer;
+  width: 100px;
+  border-radius: 25px;
+  font-size: 1em;
+  border: 1px solid #1C073E;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+header .logo {
+  font-weight: 600;
+  font-size: 2.2em;
+  color: #1C073E;
+  margin-top: 6px;
+}
+header nav {
+  color: #fff;
+}
+header nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-weight: 500;
+}
+header nav ul li {
+  display: inline-block;
+  padding: 20px;
+  font-size: 24px;
+}
+
+section.hero {
+  background-color: #fff;
+  height: 100vh;
+}
+section.hero .hero-content {
+  max-width: 370px;
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  z-index: 1;
+}
+section.hero h1 {
+  font-family: inherit;
+  color: #1C073E;
+  font-size: 2.6em;
+  margin-bottom: 0.6em;
+  line-height: 1.3em;
+}
+section.hero h1 span {
+  color: #FFD500;
+}
+section.hero p {
+  font-size: 1em;
+  margin-bottom: 2em;
+  color: rgb(138, 137, 137);
+}
+section.hero .signup-btn {
+  background-color: #1C073E;
+  color: #fff;
+  margin-right: 1em;
+  width: 100px;
+  -webkit-box-shadow: 3px 3px 3px #591eb8;
+          box-shadow: 3px 3px 3px #591eb8;
+  border-radius: 25px;
+}
+section.hero .talk-btn {
+  background-color: #fff;
+  -webkit-box-shadow: 3px 3px 3px #591eb8;
+          box-shadow: 3px 3px 3px #591eb8;
+  color: #1C073E;
+}
+section.hero .illustration {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  height: 100vh;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+section.hero .illustration svg {
+  position: absolute;
+  right: 0;
+  width: 100%;
+  height: auto;
+}
+
+/* media Query */
+/* @media (max-width:1399.98px) {}
+@media (max-width:1199.98px){}
+@media(max-width:991.98px) {}
+@media(max-width:767.98px) {}
+@media (max-width:575.98px){} */
+@media (max-width: 991.98px) {
+  nav {
+    display: none;
+  }
+}
